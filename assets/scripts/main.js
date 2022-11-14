@@ -47,8 +47,7 @@ function initializeServiceWorker() {
     return;
   }
   window.addEventListener('load', (event)=> {
-    sw = navigator.serviceWorker.register('./sw.js')
-    sw.then((registration) =>{
+    navigator.serviceWorker.register('./sw.js').then((registration) =>{
       console.log("it was successful");
     },(error) => {
       console.log("it has failed");
