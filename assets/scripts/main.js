@@ -115,7 +115,7 @@ async function getRecipes() {
       else{
         resolve(recipeFetch);
       }
-    }
+    })
   /**************************/
   // A4-A11 will all be *inside* the callback function we passed to the Promise
   // we're returning
