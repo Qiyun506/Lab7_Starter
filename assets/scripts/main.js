@@ -111,6 +111,7 @@ async function getRecipes() {
       if(saveRecipesToStorage.length == 0){
         reject(rejectError);
       }
+      
       else{
         resolve(recipeFetch);
       }
